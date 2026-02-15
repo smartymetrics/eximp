@@ -1908,14 +1908,15 @@ select {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .vm-grid,
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
     .section-header-with-filters {
         flex-direction: column;
         align-items: flex-start;
-    }
-
-    .section-header-with-filters .property-filters {
-        width: auto;
-        align-self: flex-end;
     }
 }
 
@@ -1957,8 +1958,23 @@ select {
         display: none;
     }
 
-    .hero-text h1 {
-        font-size: 2.5rem;
+    .hero-text h1,
+    .about-hero h1,
+    .contact-info h1 {
+        font-size: 2.2rem;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .vm-image,
+    .contact-map {
+        height: 300px;
+    }
+
+    .contact-form-container {
+        padding: 2rem;
     }
 
     .properties-grid {
@@ -1967,15 +1983,6 @@ select {
 
     .footer-grid {
         grid-template-columns: 1fr;
-    }
-
-    .section-header-with-filters .property-filters {
-        align-self: flex-start;
-        width: 100%;
-    }
-
-    .property-filters {
-        justify-content: center;
     }
 }
 
