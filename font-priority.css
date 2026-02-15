@@ -1,0 +1,43 @@
+/* HURME GEOMETRIC SANS 1 - PRIORITY FONT LOADING */
+/* This must load FIRST before any other styles */
+
+@font-face {
+    font-family: 'Hurme Geometric Sans 1';
+    src: url('HurmeGeometricSans1.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Hurme Geometric Sans 1';
+    src: url('HurmeGeometricSans1_SemiBold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Hurme Geometric Sans 1';
+    src: url('HurmeGeometricSans1_Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: block;
+}
+
+/* FORCE FONT ON EVERYTHING - ONLY HURME GEOMETRIC SANS 1 */
+* {
+    font-family: 'Hurme Geometric Sans 1' !important;
+}
+
+html {
+    font-family: 'Hurme Geometric Sans 1' !important;
+}
+
+body {
+    font-family: 'Hurme Geometric Sans 1' !important;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, span, div, button, input, textarea, select, label {
+    font-family: 'Hurme Geometric Sans 1' !important;
+}

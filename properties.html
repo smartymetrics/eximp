@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="font-priority.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Properties - Eximp & Cloves</title>
+    <link rel="preload" href="HurmeGeometricSans1.otf" as="font" type="font/otf" crossorigin>
+    <link rel="preload" href="HurmeGeometricSans1-SemiBold.otf" as="font" type="font/otf" crossorigin>
+    <link rel="preload" href="HurmeGeometricSans1-Bold.otf" as="font" type="font/otf" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        @font-face {
+            font-family: 'Hurme Geometric Sans 1';
+            src: local('Arial'), local('Helvetica'), local('sans-serif');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        .property-tabs {
+            display: flex;
+            gap: 0;
+            margin-bottom: 2rem;
+            border: 1px solid var(--border-color);
+            border-radius: 30px;
+            padding: 4px;
+            background: rgba(255, 255, 255, 0.03);
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: center;
+        }
+        
+        .property-tab {
+            background: transparent;
+            border: none;
+            color: var(--text-secondary);
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+            font-weight: 500;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.3s ease;
+            font-family: 'Hurme Geometric Sans 1', sans-serif;
+            border-radius: 25px;
+            white-space: nowrap;
+        }
+        
+        .property-tab:hover {
+            color: var(--text-primary);
+        }
+        
+        .property-tab.active {
+            color: var(--bg-darker);
+            background: var(--primary-color);
+        }
+        
+        .property-tab.active::after {
+            display: none;
+        }
+        
+        .property-content {
+            display: none;
+        }
+        
+        .property-content.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="logo.svg" alt="Eximp & Cloves Logo">
+                <div class="logo-text">
+                    <span class="logo-title">Eximp & Cloves</span>
+                    <span class="logo-subtitle">Infrastructure Limited</span>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <div class="hamburger"></div>
+            </button>
+            <a href="contact.html" class="btn-primary">Book An Inspection</a>
+        </div>
+    </nav>
+
+    <!-- Property Hero -->
+    <section class="property-hero">
+        <div class="container">
+            <div class="property-hero-content">
+                <span class="hero-label">Our Properties</span>
+                <h1>Premium Land Properties with Flexible Payment Plans</h1>
+                <p>Secure your future with affordable landed properties in Nigeria's fastest-growing regions. Enjoy up to 63% discount with our pre-launch promo prices and flexible installment</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Tabs Section -->
+    <section class="property-info-section">
+        <div class="container">
+            <div class="property-tabs">
+                <button class="property-tab active" data-tab="abuja">Abuja Properties</button>
+                <button class="property-tab" data-tab="ogun">Ogun Properties</button>
+            </div>
+
+            <!-- Abuja Property Content -->
+            <div id="abuja" class="property-content active">
+                <!-- Property Main Image -->
+                <div class="property-main-image" style="margin: 2rem 0;">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='500' viewBox='0 0 1200 500'%3E%3Cdefs%3E%3ClinearGradient id='abuja-land' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2387CEEB;stop-opacity:1' /%3E%3Cstop offset='40%25' style='stop-color:%23F0E68C;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23228B22;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23abuja-land)' width='1200' height='500'/%3E%3C/svg%3E" alt="Prime Circle Estate">
+                </div>
+
+                <div class="property-info-grid">
+                    <div class="property-description">
+                        <h2>Prime Circle Estate</h2>
+                        <p><strong>📍 Gwagwalada, Abuja, 450-857</strong></p>
+                        <div style="display: flex; gap: 1rem; margin: 1rem 0;">
+                            <span class="tag">Off-plan</span>
+                            <span class="tag">3-6 months</span>
+                            <span class="tag">Free site</span>
+                        </div>
+                        
+                        <p style="margin-top: 2rem;">Located in a highly sought-after area near Abuja – Kaduna Express road, just a 15-minute drive east of both Zuba town from Cisko Estate. Sales only by allocation which means the land of choice that was once reserved for future holds are like Atlantic and Skyline reserved districts.</p>
+                        
+                        <p>This smart estate delivers world modern homes in an unbeatable location – the kind of choice that you'd normally find more in Port Harcourt, Lagos or Calabar.</p>
+
+                        <div class="key-features">
+                            <h3>Key Features</h3>
+                            <ul class="features-list">
+                                <li>Strategically situated near the University of Abuja, Redeemed Camp, and Family Worship Center. Prime Circle connects you to everything that matters: education, healthcare, and spiritual wellness.</li>
+                                <li>Strategically positioned less than 20 minutes from Redemption Camp, this location offers excellent accessibility and connectivity while remaining in a quiet section of major arterial centers and strategic landmarks.</li>
+                                <li>The estate is experiencing gradual expansion of a thriving major road plus a promising catchment for future adding no fear to seek any easy or no clutter.</li>
+                                <li>Positioned for a maximum 10-year period of innovation (based on smart real estate positioning).</li>
+                            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <div class="hamburger"></div>
+            </button>
+                        </div>
+
+                        <div class="estate-amenities">
+                            <h3>Estate Amenities</h3>
+                            <div class="amenities-grid">
+                                <div class="amenity-card">
+                                    <div class="amenity-icon">🏠</div>
+                                    <h4>Smart Home Automation</h4>
+                                    <p>Seamless control of light, security, and climate with integrated smart home.</p>
+                                </div>
+                                <div class="amenity-card">
+                                    <div class="amenity-icon">🎓</div>
+                                    <h4>Tech Institute for Kids</h4>
+                                    <p>Designed to nurture the tech generation of tomorrow with well-equipped facilities.</p>
+                                </div>
+                                <div class="amenity-card">
+                                    <div class="amenity-icon">📚</div>
+                                    <h4>Research Hub & Library</h4>
+                                    <p>A vibrant knowledge center for focused study, investigation, and learning.</p>
+                                </div>
+                                <div class="amenity-card">
+                                    <div class="amenity-icon">💡</div>
+                                    <h4>Innovation Incubators</h4>
+                                    <p>Dedicated spaces for budding entrepreneurs and startup builders.</p>
+                                </div>
+                                <div class="amenity-card">
+                                    <div class="amenity-icon">🏪</div>
+                                    <h4>Mini Mall</h4>
+                                    <p>Shop necessities and lifestyle brands without leaving your estate.</p>
+                                </div>
+                                <div class="amenity-card">
+                                    <div class="amenity-icon">⛳</div>
+                                    <h4>Mini Golf Course</h4>
+                                    <p>Relax, green luxury and a relaxing green for weekend play.</p>
+                                </div>
+                                <div class="amenity-card">
+                                    <div class="amenity-icon">🎾</div>
+                                    <h4>Tennis Court & Swimming Pool</h4>
+                                    <p>Active living for residents who value fitness and well-being.</p>
+                                </div>
+                                <div class="amenity-card" style="background: rgba(255, 157, 66, 0.1); border-color: var(--primary-color);">
+                                    <div class="amenity-icon">💾</div>
+                                    <h4>Data Centers</h4>
+                                    <p>Secure digital infrastructure for modern connectivity and Wi-Fi residents into a community where staying connected is a guarantee.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="payment-sidebar">
+                        <div class="payment-card">
+                            <h3>Payment Plan</h3>
+                            <p class="payment-info">Initial Deposit: ₦600,000<br>1st Closing Balance Price</p>
+                            
+                            <div class="price-options">
+                                <div class="price-option active">
+                                    <div class="size-label">Size 1</div>
+                                    <div class="size-value">200sqm</div>
+                                    <div class="discount-badge">Discount: 63.64% OFF</div>
+                                    <div class="original-price">₦5,500,000</div>
+                                    <div class="current-price">₦2,000,000</div>
+                                    <div class="payment-details">
+                                        <div><span>Outright:</span><span>₦2,000,000</span></div>
+                                        <div><span>Monthly Payment (6 Months):</span><span>₦375,000</span></div>
+                                        <div><span>Monthly Payment (12 Months):</span><span>₦200,000</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="price-option">
+                                    <div class="size-label">Size 2</div>
+                                    <div class="size-value">300sqm</div>
+                                    <div class="discount-badge">Discount: 53.85% OFF</div>
+                                    <div class="original-price">₦6,500,000</div>
+                                    <div class="current-price">₦3,000,000</div>
+                                    <div class="payment-details">
+                                        <div><span>Outright:</span><span>₦3,500,000</span></div>
+                                        <div><span>Monthly Payment (6 Months):</span><span>₦625,000</span></div>
+                                        <div><span>Monthly Payment (12 Months):</span><span>₦333,333</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="price-option">
+                                    <div class="size-label">Size 3</div>
+                                    <div class="size-value">500sqm</div>
+                                    <div class="discount-badge">Discount: 50% OFF</div>
+                                    <div class="original-price">₦10,000,000</div>
+                                    <div class="current-price">₦5,000,000</div>
+                                    <div class="payment-details">
+                                        <div><span>Outright:</span><span>₦6,000,000</span></div>
+                                        <div><span>Monthly Payment (6 Months):</span><span>₦1,125,000</span></div>
+                                        <div><span>Monthly Payment (12 Months):</span><span>₦700,000</span></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="contact.html" class="btn-primary cta-button">Enquire Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ogun Property Content -->
+            <div id="ogun" class="property-content">
+                <!-- Property Main Image -->
+                <div class="property-main-image" style="margin: 2rem 0;">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='500' viewBox='0 0 1200 500'%3E%3Cdefs%3E%3ClinearGradient id='ogun-land' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23F4A460;stop-opacity:0.8' /%3E%3Cstop offset='50%25' style='stop-color:%23DAA520;stop-opacity:0.9' /%3E%3Cstop offset='100%25' style='stop-color:%23CD853F;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23ogun-land)' width='1200' height='500'/%3E%3C/svg%3E" alt="Marvellous Estate">
+                </div>
+
+                <div class="property-info-grid">
+                    <div class="property-description">
+                        <h2>Marvellous estate</h2>
+                        <p><strong>📍 Mowe-Ofada Ibafo-Lagos - Ibadan</strong></p>
+                        <div style="display: flex; gap: 1rem; margin: 1rem 0;">
+                            <span class="tag">Off-plan</span>
+                            <span class="tag">3-6 months</span>
+                            <span class="tag">Free site</span>
+                        </div>
+                        
+                        <p style="margin-top: 2rem;">Set on a 1,148 (100 ACRES) plot in Ogun State, Mowe-Ofada offers a refreshing around 8.3 places quota and opportunity. Primary center and gateway by Marvellous Estate, Unlimited property finds Ideally 8.3 positioned for investment when Mowe-Ofada boasts a bright picture you are able to build modular smart dwellings offering a savvy investor perfect visibility or housing mix</p>
+                        
+                        <p>The plan conveys property tech smart dwellings at best quality with today's living convenience bundled for the kind of neighborhood quality and identity you want to be part of.</p>
+
+                        <div class="key-features">
+                            <h3>Key Features</h3>
+                            <ul class="features-list">
+                                <li>Located in the fast-growing Mowe-Ofada area in Ogun state, the property sits on a static base ideal for value residential development in a long term.</li>
+                                <li>Strategically positioned less than 20 minutes from Redemption Camp, this location offers excellent accessibility connectivity while maintaining a quiet section of major arterial centers and strategic landmarks.</li>
+                                <li>The area is experiencing gradual expansion of major roads/infrastructure leading to a promising catchment for future added Marvellous as a promising catchment to a better base.</li>
+                                <li>Supported for a combined 10-year period of innovation (based on smart real estate positioning).</li>
+                            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <div class="hamburger"></div>
+            </button>
+                        </div>
+
+                        <div class="estate-amenities">
+                            <h3>Estate Amenities</h3>
+                            <div class="amenities-grid">
+                                <div class="amenity-card">
+                                    <div class="amenity-icon">🏠</div>
+                                    <h4>Smart Home Automation</h4>
+                                    <p>From control of lights, security, and climate with integrated smart living.</p>
+                                </div>
+                                <div class="amenity-card">
+                                    <div class="amenity-icon">🎓</div>
+                                    <h4>Tech Institute for Kids</h4>
+                                    <p>Nurturing young tech stars with a well-equipped facility.</p>
+                                </div>
+                                <div class="amenity-card">
+                                    <div class="amenity-icon">📚</div>
+                                    <h4>Research Hub & Library</h4>
+                                    <p>Enjoy study spaces with a diverse knowledge zone for weekend play.</p>
+                                </div>
+                                <div class="amenity-card">
+                                    <div class="amenity-icon">💡</div>
+                                    <h4>Innovation Incubators</h4>
+                                    <p>Keep specialized hubs for business entrepreneurs and digital builders.</p>
+                                </div>
+                                <div class="amenity-card">
+                                    <div class="amenity-icon">🏪</div>
+                                    <h4>Mini Mall</h4>
+                                    <p>Leisure, retail and lifestyle facilities without leaving your zone.</p>
+                                </div>
+                                <div class="amenity-card">
+                                    <div class="amenity-icon">⛳</div>
+                                    <h4>Mini Golf Course</h4>
+                                    <p>Leisure sports facility with a relaxing green for weekend play.</p>
+                                </div>
+                                <div class="amenity-card">
+                                    <div class="amenity-icon">🎾</div>
+                                    <h4>Tennis Court & Swimming Pool</h4>
+                                    <p>Wellness living for residents who value fitness and well-being.</p>
+                                </div>
+                                <div class="amenity-card" style="background: rgba(255, 157, 66, 0.1); border-color: var(--primary-color);">
+                                    <div class="amenity-icon">💾</div>
+                                    <h4>Data Centers</h4>
+                                    <p>Wireless based reliable service that Marvellous delivers into a network residents into a community where staying well connected is a built-in guarantee with Cloud for the foundation.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="payment-sidebar">
+                        <div class="payment-card">
+                            <h3>Payment Plan</h3>
+                            <p class="payment-info">Initial Deposit: ₦600,000<br>1st Closing Balance Price</p>
+                            
+                            <div class="price-options">
+                                <div class="price-option active">
+                                    <div class="size-label">Size 1</div>
+                                    <div class="size-value">200sqm</div>
+                                    <div class="discount-badge">Discount: 63.64% OFF</div>
+                                    <div class="original-price">₦5,500,000</div>
+                                    <div class="current-price">₦2,000,000</div>
+                                    <div class="payment-details">
+                                        <div><span>Outright:</span><span>₦2,000,000</span></div>
+                                        <div><span>Monthly Payment (6 Months):</span><span>₦375,000</span></div>
+                                        <div><span>Monthly Payment (12 Months):</span><span>₦250,000</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="price-option">
+                                    <div class="size-label">Size 2</div>
+                                    <div class="size-value">300sqm</div>
+                                    <div class="discount-badge">Discount: 53.85% OFF</div>
+                                    <div class="original-price">₦6,500,000</div>
+                                    <div class="current-price">₦3,000,000</div>
+                                    <div class="payment-details">
+                                        <div><span>Outright:</span><span>₦3,500,000</span></div>
+                                        <div><span>Monthly Payment (6 Months):</span><span>₦625,000</span></div>
+                                        <div><span>Monthly Payment (12 Months):</span><span>₦375,000</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="price-option">
+                                    <div class="size-label">Size 3</div>
+                                    <div class="size-value">500sqm</div>
+                                    <div class="discount-badge">Discount: 50% OFF</div>
+                                    <div class="original-price">₦10,000,000</div>
+                                    <div class="current-price">₦5,000,000</div>
+                                    <div class="payment-details">
+                                        <div><span>Outright:</span><span>₦6,000,000</span></div>
+                                        <div><span>Monthly Payment (6 Months):</span><span>₦1,125,000</span></div>
+                                        <div><span>Monthly Payment (12 Months):</span><span>₦750,000</span></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="contact.html" class="btn-primary cta-button">Enquire Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Be the first to hear our news letters!</h2>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="E-mail" required>
+                    <button type="submit" class="submit-btn">→</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="logo.svg" alt="Eximp & Cloves Logo">
+                        <div class="logo-text">
+                            <span class="logo-title">Eximp & Cloves</span>
+                            <span class="logo-subtitle">Infrastructure Limited</span>
+                        </div>
+                    </div>
+                    <p>Invest in Nigeria's fastest-growing locations with flexible payment plans. Join thousands of smart investors building generational wealth through verified land banking</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <div class="hamburger"></div>
+            </button>
+                </div>
+                <div class="footer-links">
+                    <h4>Locations</h4>
+                    <ul>
+                        <li><a href="#">Lagos</a></li>
+                        <li><a href="#">Ogun</a></li>
+                        <li><a href="#">Abuja</a></li>
+                    </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <div class="hamburger"></div>
+            </button>
+                </div>
+                <div class="footer-links">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <div class="hamburger"></div>
+            </button>
+                </div>
+                <div class="footer-links">
+                    <h4>More</h4>
+                    <ul>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="#">License</a></li>
+                    </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <div class="hamburger"></div>
+            </button>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="language-selector">
+                    <span>🌐 Language: <strong>English</strong></span>
+                </div>
+                <p>2025 Eximp © All rights reserved</p>
+                <div class="footer-legal">
+                    <a href="#">Cookies Policy</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Property tabs functionality
+        document.querySelectorAll('.property-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                const tabName = this.getAttribute('data-tab');
+                
+                // Remove active class from all tabs and contents
+                document.querySelectorAll('.property-tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.property-content').forEach(c => c.classList.remove('active'));
+                
+                // Add active class to clicked tab and corresponding content
+                this.classList.add('active');
+                document.getElementById(tabName).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
