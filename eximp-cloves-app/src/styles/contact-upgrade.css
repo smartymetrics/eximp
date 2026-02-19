@@ -1,0 +1,427 @@
+/* =========================================
+   Professional Contact Page Styles
+   ========================================= */
+
+/* Hero Section */
+.contact-hero-modern {
+    position: relative;
+    min-height: 60vh;
+    padding-top: 120px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('/about_hero_background.png');
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 4rem;
+}
+
+.contact-hero-modern .overlay-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+}
+
+.hero-content-centered {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.hero-content-centered h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero-content-centered p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Main Layout */
+.contact-main-layout {
+    margin-bottom: 3.5rem;
+}
+
+/* Info Grid */
+.contact-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.info-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    background: rgba(67, 97, 238, 0.1);
+    color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.info-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.info-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.status-badge {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.25rem 0.75rem;
+    background: #e6fffa;
+    color: #047857;
+    /* Green-800 */
+    font-size: 0.8rem;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+/* Split Layout */
+.contact-content-split {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 3rem;
+    align-items: start;
+    margin-bottom: 4rem;
+}
+
+@media (max-width: 992px) {
+    .contact-content-split {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Premium Shadow for Cards */
+.premium-shadow {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border: none;
+}
+
+.booking-card .card-header {
+    margin-bottom: 2rem;
+}
+
+.booking-card .card-header h3 {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.booking-card .card-header p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* Map Card */
+.map-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.map-card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.map-frame {
+    border-radius: 8px;
+    overflow: hidden;
+    background: #eee;
+}
+
+
+
+/* FAQ Section - Enhanced Premium Dark */
+.faq-section {
+    width: 100%;
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 3.5rem 2rem;
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.section-header-small {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.section-header-small h2 {
+    font-size: 2.8rem;
+    background: linear-gradient(135deg, #ffffff 0%, #a5b4fc 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.75rem;
+    font-weight: 800;
+}
+
+.section-header-small p {
+    color: #94a3b8;
+    font-size: 1.15rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.faq-search-container {
+    margin-bottom: 2.5rem;
+    position: relative;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.faq-search-input {
+    width: 100%;
+    padding: 1.1rem 1.5rem 1.1rem 3.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1.5px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    font-size: 1.05rem;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    color: #ffffff;
+}
+
+.faq-search-input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.07);
+    border-color: var(--primary-color);
+    box-shadow: 0 0 20px rgba(67, 97, 238, 0.2);
+}
+
+.faq-search-icon {
+    position: absolute;
+    left: 1.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--primary-color);
+    opacity: 0.7;
+}
+
+.faq-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 0 0.5rem;
+}
+
+.faq-count {
+    color: #64748b;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.expand-all-btn {
+    background: rgba(67, 97, 238, 0.1);
+    border: 1px solid rgba(67, 97, 238, 0.3);
+    color: var(--primary-color);
+    padding: 0.6rem 1.25rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.expand-all-btn:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(67, 97, 238, 0.3);
+}
+
+.faq-grid {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.faq-item {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.faq-item:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(67, 97, 238, 0.4);
+    transform: translateY(-2px);
+}
+
+.faq-item.open {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--primary-color);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+}
+
+.faq-question {
+    padding: 1.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.faq-question h4 {
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #f8fafc;
+    flex: 1;
+    line-height: 1.5;
+    transition: color 0.3s ease;
+}
+
+.faq-item.open .faq-question h4 {
+    color: var(--primary-color);
+}
+
+.faq-question svg {
+    flex-shrink: 0;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    color: #64748b;
+}
+
+.faq-item.open .faq-question svg {
+    transform: rotate(180deg);
+    color: var(--primary-color);
+}
+
+.faq-answer {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 1.5rem 1.75rem 1.75rem;
+    color: #cbd5e1;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.faq-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.faq-link:hover {
+    color: white;
+    border-bottom-color: var(--primary-color);
+}
+
+.faq-no-results {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: #94a3b8;
+}
+
+.faq-no-results h3 {
+    font-size: 1.75rem;
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .faq-section {
+        margin: 2rem auto;
+        width: 92%;
+        padding: 2.5rem 1.25rem;
+    }
+
+    .section-header-small h2 {
+        font-size: 2rem;
+    }
+
+    .faq-question {
+        padding: 1.25rem;
+    }
+
+    .faq-question h4 {
+        font-size: 1rem;
+    }
+}
+
+/* Form Styles Override for Visibility */
+.form-group-react input,
+.form-group-react select,
+.form-group-react textarea {
+    width: 100%;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.05);
+    /* Light translucent bg */
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    color: #ffffff;
+    /* Explicit White text */
+    font-size: 0.95rem;
+    outline: none;
+    transition: var(--transition-smooth);
+}
+
+.form-group-react input:focus,
+.form-group-react select:focus,
+.form-group-react textarea:focus {
+    border-color: var(--primary-color);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.form-group-react label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Fix for Select Dropdown Options */
+.form-group-react select option {
+    background-color: #222;
+    /* Dark background for options */
+    color: #ffffff;
+    /* White text */
+    padding: 10px;
+}

@@ -1,0 +1,30 @@
+{
+  "name": "eximp-cloves-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "sync-version": "node scripts/sync-version.js",
+    "predev": "npm run sync-version",
+    "dev": "vite",
+    "prebuild": "npm run sync-version",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "framer-motion": "^12.34.0",
+    "lucide-react": "^0.564.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-router-dom": "^7.13.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react-swc": "^4.2.3",
+    "vite": "^6.4.1"
+  }
+}
